@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Rameti Finventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary-green: #4CAF50;
+      --secondary-green: #2e7d32;
+      --dark-blue: #001a3d;
+      --light-bg: #f5f7fa;
+      --white: #ffffff;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(to right, #4CAF50, #2e7d32);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      height: 50px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #c2ffc2;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') no-repeat center center/cover;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      z-index: 1;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: var(--white);
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: var(--primary-green);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--dark-blue);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav {
+        margin-top: 10px;
+        flex-direction: column;
+      }
+      .nav a {
+        margin: 8px 0;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <img src="https://i.ibb.co/3RjCJ7r/logo.png" alt="Rameti Logo">
+      <span style="font-size: 24px; font-weight: bold; margin-left: 10px;">Rameti Finventures</span>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="#">SSI Framework</a>
+      <a href="#">Products</a>
+      <a href="#">Advisor Opportunities</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>About Us</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="section" style="display: flex; align-items: center; gap: 5px;">
+    <img src="mi.jpg" alt="Mission Image" style="width:150px; height:auto;">
+  <div>
+    <h1 style="margin: 0; text-align: center; color: var(--primary-green);">Our Mission</h1>&nbsp;
+    <p style="max-width: 1000px; text-align: center;">
+      To make every individual financially aware, financially secure, and financially free – through simple guidance, trusted solutions, and a nationwide network of empowered advisors.
+    </p>
+  </div>
+</div>
+<!-- <div class="section">
+      <img src="mi.jpg"/>
+      <h2>Our Mission</h2>
+      <p>To make every individual financially aware, financially secure, and financially free – through simple guidance, trusted solutions, and a nationwide network of empowered advisors.</p>
+    </div> -->
+
+    <div class="section">
+      <h2>Our Vision</h2>
+      <p>In a world where personal finance remains under-prioritized, Rameti Finventures is committed to making financial knowledge accessible, actionable, and inclusive. We believe that financial freedom is not a privilege, but a right that every individual can attain with the right guidance, tools, and support.</p>
+    </div>
+
+    <div class="section">
+      <h2>Core Strengths</h2>
+      <ul>
+        <li>A structured SSI framework (Save, Secure, Invest)</li>
+        <li>Wide range of financial products from regulated entities</li>
+        <li>Strong advisor network with ongoing support</li>
+        <li>Vision-aligned with India’s financial inclusion goals</li>
+        <li>Educational approach that builds client trust and confidence</li>
+        <li>Expert financial advisors</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Rameti Finventures. All Rights Reserved.
+  </div>
+
+</body>
+</html>
